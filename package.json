@@ -1,0 +1,15 @@
+{
+  "name": "todo-eliott-node",
+  "version": "1.0.0",
+  "description": "Todo-list de Eliott pour le TP de prise en main de Clever Cloud",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "pg": "^8.11.0",
+    "dotenv": "^16.4.0"
+  }
+}

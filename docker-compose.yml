@@ -1,0 +1,27 @@
+services:
+  db:
+    container_name: db
+    image: postgres:17
+    environment:
+      - POSTGRES_DB=todos
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - webapp
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+
+
+networks:
+  webapp:
+
+volumes:
+  pg-data:

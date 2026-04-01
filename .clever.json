@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "app_id": "app_ca9d5d60-d42d-4959-9f11-de5219363cfd",
+      "org_id": "orga_e4d64185-94d8-4d10-9d26-31b39dafd743",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_ca9d5d60-d42d-4959-9f11-de5219363cfd.git",
+      "git_ssh_url": "git+ssh://git@push-n3-par-clevercloud-customers.services.clever-cloud.com/app_ca9d5d60-d42d-4959-9f11-de5219363cfd.git",
+      "name": "todo-bassier",
+      "alias": "todo-bassier"
+    }
+  ]
+}
